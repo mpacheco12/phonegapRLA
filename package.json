@@ -1,6 +1,6 @@
 {
     "name": "phonegap-rla-screen",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "description": "Phonegap app for the RLA screen",
     "repository": {
         "type": "git",
