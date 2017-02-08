@@ -24,7 +24,7 @@ var app = {
     receivedEvent: function(id) {
         var parentElement = document.getElementById(id);
         AndroidFullScreen.immersiveMode(successFunction, errorFunction);
-
+        window.plugins.insomnia.keepAwake();
         loadApp();
     }
 };
