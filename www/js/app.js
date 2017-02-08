@@ -23,10 +23,23 @@ var app = {
     // Update DOM on a Received Event
     receivedEvent: function(id) {
         var parentElement = document.getElementById(id);
+        AndroidFullScreen.immersiveMode(successFunction, errorFunction);
+
         loadApp();
     }
 };
 
+function successFunction() {
+    console.info("It worked!");
+}
+
+function errorFunction(error) {
+    console.error(error);
+}
+
+function trace(value) {
+    console.log(value);
+}
 
 function loadApp() {
     if (navigator.onLine) {
@@ -34,19 +47,10 @@ function loadApp() {
         var url = "http://192.168.1.56:3000/screen";
         var target = "_self";
         var options = "location=no,hidden=yes,zoom=no,hardwareback=no,toolbar=no,allowInlineMediaPlayback=yes";
-        // var ref = cordova.InAppBrowser.open(url, target, options);
-        // ref.addEventListener("loadstop", function() {
-        //     ref.show();
-        //     AndroidFullScreen.immersiveMode(successFunction, errorFunction);
-        // });
-        var ifr = document.getElementById('mainFrame');
-        // console.log(app.getPath('userData'))
-        ifr.onload = function() {
-            this.style.display = 'block';
-        };
-        ifr.src = 'http://192.168.1.56:3000/screen';
-
-
+        var ref = cordova.InAppBrowser.open(url, target, options);
+        ref.addEventListener("loadstop", function() {
+            ref.show();
+        });
     } else {
         document.getElementById("loading").style.display = "none";
         document.getElementById('greet').innerHTML = "You need to be connected to the internet to use the RLA application.";

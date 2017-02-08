@@ -10,12 +10,8 @@
     <content src="index.html" />
     <access origin="*" />
     <icon src="icon.png" />
-    <gap:config-file parent="/manifest" platform="android">
-        <supports-screens android:largeScreens="true" android:smallScreens="true" android:xlargeScreens="true" />
-        <application android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
-            <activity android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
-            </activity>
-        </application>
-    </gap:config-file>
+    <allow-navigation href="http://*.rla.io/" />
+    <allow-navigation href="http://rla.io/" />
+    <allow-navigation href="http://192.168.1.56:3000" />
     <preference name="Fullscreen" value="true" />
 </widget>
