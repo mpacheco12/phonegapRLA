@@ -12,4 +12,5 @@
     <preference name="Fullscreen" value="true" />
     <icon src="icon.png" />
     <plugin name="cordova-plugin-inappbrowser" spec="~1.6.1" />
+    <plugin name="cordova-plugin-fullscreen" spec="~1.1.0" />
 </widget>
