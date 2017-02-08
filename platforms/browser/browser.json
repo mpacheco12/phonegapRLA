@@ -9,6 +9,9 @@
     "installed_plugins": {
         "cordova-plugin-inappbrowser": {
             "PACKAGE_NAME": "com.reallifeanalytics.rlascreenapp"
+        },
+        "cordova-plugin-fullscreen": {
+            "PACKAGE_NAME": "com.reallifeanalytics.rlascreenapp"
         }
     },
     "dependent_plugins": {},
@@ -29,9 +32,18 @@
             "merges": [
                 ""
             ]
+        },
+        {
+            "file": "plugins/cordova-plugin-fullscreen/www/AndroidFullScreen.js",
+            "id": "cordova-plugin-fullscreen.AndroidFullScreen",
+            "pluginId": "cordova-plugin-fullscreen",
+            "clobbers": [
+                "AndroidFullScreen"
+            ]
         }
     ],
     "plugin_metadata": {
-        "cordova-plugin-inappbrowser": "1.2.1"
+        "cordova-plugin-inappbrowser": "1.2.1",
+        "cordova-plugin-fullscreen": "1.1.0"
     }
 }
