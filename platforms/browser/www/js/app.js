@@ -19,7 +19,6 @@ var app = {
             e.preventDefault();
         }, false);
         app.receivedEvent('deviceready');
-        AndroidFullScreen.immersiveMode(successFunction, errorFunction);
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
@@ -28,17 +27,6 @@ var app = {
     }
 };
 
-function successFunction() {
-    console.info("It worked!");
-}
-
-function errorFunction(error) {
-    console.error(error);
-}
-
-function trace(value) {
-    console.log(value);
-}
 
 function loadApp() {
     if (navigator.onLine) {
