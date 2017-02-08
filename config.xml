@@ -11,6 +11,5 @@
     <access origin="*" />
     <preference name="Fullscreen" value="true" />
     <icon src="icon.png" />
-    <gap:plugin name="org.apache.cordova.fullscreen" />
     <gap:plugin name="org.apache.cordova.inappbrowser" />
 </widget>
