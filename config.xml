@@ -10,5 +10,5 @@
     <content src="index.html" />
     <access origin="*" />
     <preference name="Fullscreen" value="true" />
-    <icon src="img/icons/icon.png" />
+    <icon src="icon.png" />
 </widget>
