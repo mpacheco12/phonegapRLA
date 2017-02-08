@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.reallifeanalytics.rlascreenapp" version="1.1.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>RLA Screen</name>
+    <description>
+        App for your RLA Screen
+    </description>
+    <author email="mauricio@reallifeanalytics.com" href="http://reallifeanalytics.com">
+        Real Life Analytocs
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <preference name="Fullscreen" value="true" />
+</widget>
