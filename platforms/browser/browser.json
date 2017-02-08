@@ -40,6 +40,14 @@
             "clobbers": [
                 "AndroidFullScreen"
             ]
+        },
+        {
+            "file": "plugins/cordova-plugin-fullscreen/www/AndroidFullScreen.js",
+            "id": "cordova-plugin-fullscreen.AndroidFullScreen",
+            "pluginId": "cordova-plugin-fullscreen",
+            "clobbers": [
+                "AndroidFullScreen"
+            ]
         }
     ],
     "plugin_metadata": {

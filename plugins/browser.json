@@ -9,6 +9,9 @@
     "installed_plugins": {
         "cordova-plugin-inappbrowser": {
             "PACKAGE_NAME": "com.reallifeanalytics.rlascreenapp"
+        },
+        "cordova-plugin-fullscreen": {
+            "PACKAGE_NAME": "com.reallifeanalytics.rlascreenapp"
         }
     },
     "dependent_plugins": {}

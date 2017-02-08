@@ -19,7 +19,6 @@ var app = {
             e.preventDefault();
         }, false);
         app.receivedEvent('deviceready');
-        AndroidFullScreen.immersiveMode(successFunction, errorFunction);
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
@@ -49,6 +48,7 @@ function loadApp() {
         var ref = cordova.InAppBrowser.open(url, target, options);
         ref.addEventListener("loadstop", function() {
             ref.show();
+            AndroidFullScreen.immersiveMode(successFunction, errorFunction);
         });
     } else {
         document.getElementById("loading").style.display = "none";
