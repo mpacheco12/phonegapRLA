@@ -11,6 +11,13 @@
     <access origin="*" />
     <preference name="Fullscreen" value="true" />
     <icon src="icon.png" />
-    <plugin name="cordova-plugin-inappbrowser" spec="~1.6.1" />
-    <plugin name="cordova-plugin-fullscreen" spec="~1.1.0" />
+    <plugin name="cordova-plugin-inappbrowser" spec="1.6.1" />
+    <plugin name="cordova-plugin-fullscreen" spec="1.1.0" />
+    <gap:config-file platform="android" parent="/manifest">
+        <supports-screens android:xlargeScreens="true" android:largeScreens="true" />
+        <application android:theme="@android:style/Theme.NoTitleBar">
+            <activity android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            </activity>
+        </application>
+    </gap:config-file>
 </widget>
