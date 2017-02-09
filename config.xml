@@ -14,6 +14,7 @@
     <plugin name="cordova-plugin-inappbrowser" source="npm" />
     <plugin name="cordova-plugin-whitelist" source="npm" />
     <plugin name="cordova-plugin-insomnia" source="npm" />
+    <plugin name="cordova-plugin-fastrde-injectview" source="npm" />
     <plugin name="cordova-plugin-fullscreen" spec="1.1.0" />
     <allow-navigation href="http://*.rla.io/" />
     <allow-navigation href="http://rla.io/" />
