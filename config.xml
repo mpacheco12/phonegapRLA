@@ -11,6 +11,7 @@
     <access origin="*" />
     <preference name="Fullscreen" value="true" />
     <icon src="icon.png" />
+    <preference name="phonegap-version" value="cli-5.2.0" />
     <plugin name="cordova-plugin-fastrde-injectview" source="npm" />
     <plugin name="cordova-plugin-file" spec="4.3.1" />
     <plugin name="cordova-plugin-file-transfer" spec="1.6.1" />
