@@ -24,6 +24,7 @@ var app = {
     receivedEvent: function(id) {
         var parentElement = document.getElementById(id);
         AndroidFullScreen.immersiveMode(successFunction, errorFunction);
+        StatusBar.hide();
         window.plugins.insomnia.keepAwake();
         loadApp();
     }
