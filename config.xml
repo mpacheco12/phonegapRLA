@@ -12,6 +12,7 @@
     <preference name="Fullscreen" value="true" />
     <preference name="StatusBarOverlaysWebView" value="true" />
     <preference name="StatusBarStyle" value="lightcontent" />
+    <preference name="DisallowOverscroll" value="true" />
     <icon src="icon.png" />
     <splash src="splash.png" />
     <preference name="phonegap-version" value="cli-5.2.0" />
