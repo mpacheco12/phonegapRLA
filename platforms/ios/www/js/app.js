@@ -44,6 +44,7 @@ function trace(value) {
 
 function loadApp() {
     if (navigator.onLine) {
+        console.log("nav online");
         // var url = "http://rla.io/screen";
         var url = "http://192.168.1.56:3000/screen";
         var target = "_self";
@@ -53,7 +54,8 @@ function loadApp() {
             ref.show();
         });
     } else {
-        document.getElementById("loading").style.display = "none";
+        console.log("not onliune");
+        // document.getElementById("loading").style.display = "none";
         document.getElementById('greet').innerHTML = "You need to be connected to the internet to use the RLA application.";
         return setTimeout(loadRemote, 1000);
     }
