@@ -10,8 +10,11 @@
     <content src="index.html" />
     <access origin="*" />
     <icon src="icon.png" />
-    <allow-navigation href="http://*.rla.io/" />
-    <allow-navigation href="http://rla.io/" />
+    <allow-navigation href="http://*.rla.io/*" />
+    <allow-navigation href="http://rla.io/*" />
     <allow-navigation href="http://192.168.1.56:3000" />
+    <allow-navigation href="*" />
+    <allow-navigation href="cdvfile://*" />
+    <access origin="cdvfile://*" />
     <preference name="Fullscreen" value="true" />
 </widget>

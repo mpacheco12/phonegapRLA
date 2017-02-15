@@ -1,0 +1,37 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "com.reallifeanalytics.rlascreenapp"
+        },
+        "cordova-plugin-file-transfer": {
+            "PACKAGE_NAME": "com.reallifeanalytics.rlascreenapp"
+        },
+        "cordova-plugin-fullscreen": {
+            "PACKAGE_NAME": "com.reallifeanalytics.rlascreenapp"
+        },
+        "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "com.reallifeanalytics.rlascreenapp"
+        },
+        "cordova-plugin-insomnia": {
+            "PACKAGE_NAME": "com.reallifeanalytics.rlascreenapp"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.reallifeanalytics.rlascreenapp"
+        },
+        "de.fastr.phonegap.plugins.injectView": {
+            "PACKAGE_NAME": "com.reallifeanalytics.rlascreenapp"
+        }
+    },
+    "dependent_plugins": {
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "com.reallifeanalytics.rlascreenapp"
+        }
+    }
+}

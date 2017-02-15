@@ -1,0 +1,28 @@
+{
+  "name": "cordova-plugin-fastrde-injectview",
+  "version": "0.2.0",
+  "description": "Injects cordova and Plugins in the view. Nice when you load Remote Websites",
+  "cordova": {
+    "id": "cordova-plugin-fastrde-injectview",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fastrde/cordova-plugin-fastrde-injectview"
+  },
+  "keywords": [
+    "cordova",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios",
+		"inject",
+		"remote",
+		"javascript",
+    "server"
+  ],
+  "author": "Fabian Strachanski",
+  "license": "MIT"
+}
