@@ -45,7 +45,7 @@ function trace(value) {
 function loadApp() {
     if (navigator.onLine) {
         // var url = "http://rla.io/screen";
-        var udl = "http://192.168.1.56:3000";
+        var url = "http://192.168.1.56:3000/screen";
         var target = "_self";
         var options = "location=no,hidden=yes,zoom=no,hardwareback=no,toolbar=no,allowInlineMediaPlayback=yes";
         var ref = cordova.InAppBrowser.open(url, target, options);
