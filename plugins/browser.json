@@ -27,6 +27,12 @@
         },
         "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "com.reallifeanalytics.rlascreenapp"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "com.reallifeanalytics.rlascreenapp"
+        },
+        "cordova-plugin-remote-injection": {
+            "PACKAGE_NAME": "com.reallifeanalytics.rlascreenapp"
         }
     },
     "dependent_plugins": {

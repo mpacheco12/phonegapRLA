@@ -10,6 +10,7 @@
     <content src="index.html" />
     <access origin="*" />
     <icon src="icon.png" />
+    <splash src="splash.png" />
     <allow-navigation href="http://*.rla.io/*" />
     <allow-navigation href="http://rla.io/*" />
     <allow-navigation href="http://192.168.1.56:3000" />
@@ -17,4 +18,7 @@
     <allow-navigation href="cdvfile://*" />
     <access origin="cdvfile://*" />
     <preference name="Fullscreen" value="true" />
+    <preference name="StatusBarOverlaysWebView" value="true" />
+    <preference name="StatusBarStyle" value="lightcontent" />
+    <preference name="phonegap-version" value="cli-5.2.0" />
 </widget>
