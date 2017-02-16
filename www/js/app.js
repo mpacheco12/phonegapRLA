@@ -46,18 +46,20 @@ function trace(value) {
 
 function loadApp() {
     document.getElementById("loading").style.display = "block";
-    if (navigator.onLine) {
-        var url = "http://rla.io/screen";
-        // var url = "http://192.168.1.56:3000/screen";
-        var target = "_self";
-        var options = "location=no,hidden=yes,zoom=no,hardwareback=no,toolbar=no,allowInlineMediaPlayback=yes";
-        var ref = cordova.InAppBrowser.open(url, target, options);
-        ref.addEventListener("loadstop", function() {
-            ref.show();
-        });
-    } else {
-        document.getElementById("loading").style.display = "none";
-        document.getElementById('greet').innerHTML = "You need to be connected to the internet to use the RLA application.";
-        return setTimeout(loadRemote, 1000);
-    }
+    console.log('loading');
+    console.log(navigator.onLine);
+    // if (navigator.onLine) {
+    //     var url = "http://rla.io/screen";
+    //     // var url = "http://192.168.1.56:3000/screen";
+    //     var target = "_self";
+    //     var options = "location=no,hidden=yes,zoom=no,hardwareback=no,toolbar=no,allowInlineMediaPlayback=yes";
+    //     var ref = cordova.InAppBrowser.open(url, target, options);
+    //     ref.addEventListener("loadstop", function() {
+    //         ref.show();
+    //     });
+    // } else {
+    //     document.getElementById("loading").style.display = "none";
+    //     document.getElementById('greet').innerHTML = "You need to be connected to the internet to use the RLA application.";
+    //     return setTimeout(loadRemote, 1000);
+    // }
 }
