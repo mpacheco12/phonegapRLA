@@ -45,6 +45,7 @@ function trace(value) {
 }
 
 function loadApp() {
+    document.getElementById("loading").style.display = "block";
     if (navigator.onLine) {
         // var url = "http://rla.io/screen";
         var url = "http://192.168.1.56:3000/screen";
