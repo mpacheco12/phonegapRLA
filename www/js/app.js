@@ -22,8 +22,6 @@ var app = {
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
-        var parentElement = document.getElementById(id);
-        AndroidFullScreen.immersiveMode(successFunction, errorFunction);
         window.plugins.insomnia.keepAwake();
         StatusBar.hide();
         loadApp();
@@ -49,6 +47,7 @@ function loadApp() {
         var target = "_self";
         var options = "location=no,hidden=yes,zoom=no,hardwareback=no,toolbar=no,allowInlineMediaPlayback=yes";
         var ref = cordova.InAppBrowser.open(url, target, options);
+        AndroidFullScreen.immersiveMode(successFunction, errorFunction);
         ref.addEventListener("loadstop", function() {
             ref.show();
         });
