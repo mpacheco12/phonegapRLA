@@ -25,8 +25,9 @@ var app = {
         var parentElement = document.getElementById(id);
         AndroidFullScreen.immersiveMode(successFunction, errorFunction);
         window.plugins.insomnia.keepAwake();
-        StatusBar.hide();
-
+        if (cordova.platformId == 'ios') {
+            StatusBar.hide();
+        }
         loadApp();
     }
 };
