@@ -14,6 +14,8 @@
     <preference name="StatusBarStyle" value="lightcontent" />
     <preference name="DisallowOverscroll" value="true" />
     <preference name="AllowInlineMediaPlayback" value="true" />
+    <preference name="iosPersistentFileLocation" value="Library" />
+
     <icon src="icon.png" />
     <splash src="splash.png" />
     <!-- FOR ANDROID COMMENT THE NEXT LINE -->
